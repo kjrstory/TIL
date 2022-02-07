@@ -1,4 +1,4 @@
-# BaekJoon 2118 미로탐색
+# BaekJoon 2178 미로탐색
 
 - 문제 출처 : https://www.acmicpc.net/problem/2178
 
