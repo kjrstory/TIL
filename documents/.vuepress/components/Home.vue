@@ -1,21 +1,17 @@
 <template>
   <div>
     <div class="titleContainer">
-      <h1>오늘 배운 건
-        <br>오늘 적자
+      <h1>Today I Learned
+       <br>테스트 
       </h1>
-
       <div class="infoContainer">
-        <div class="name">Jay Jin's TIL</div>
+        <div class="name">김종록(Jong Rok Kim)</div>
         <ul>
           <li>
-            <a href="https://milooy.wordpress.com/">Blog</a>
+            <a href="https://github.com/kjrstory">GitHub</a>
           </li>
           <li>
-            <a href="https://github.com/milooy">GitHub</a>
-          </li>
-          <li>
-            <a href="https://soundcloud.com/hellojayjin">SoundCloud</a>
+            <a href="https://www.linkedin.com/in/kjrstory/">LinkedIn</a>
           </li>
         </ul>
       </div>
@@ -27,15 +23,15 @@
 </script>
 
 <style>
-@import "https://fonts.googleapis.com/css?family=Gugi";
+@import "https://fonts.googleapis.com/css?family=Black+And+White+Picture";
 
 .infoContainer {
   text-align: right;
 }
 h1 {
-  font-family: "Gugi", cursive;
+  font-family: "Black And White Picture", sans-serif;
   font-weight: 500;
-  border-bottom: 17px solid #ffd816;
+  border-bottom: 17px solid #b9fba7;
   word-break: keep-all;
   font-size: 5rem;
 }
