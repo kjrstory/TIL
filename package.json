@@ -1,6 +1,6 @@
 {
   "name": "til",
-  "description": "오늘 배운 건 오늘 적자",
+  "description": "kjrstory til",
   "scripts": {
     "dev": "vuepress dev documents",
     "build": "vuepress build documents",
