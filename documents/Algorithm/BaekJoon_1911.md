@@ -2,12 +2,12 @@
 
 [문제 출처](https://www.acmicpc.net/problem/1911)  
 
-- 풀이 방법 및 배워야할 것: 
+* 풀이 방법 및 배워야할 것: 
 
-  이진 트리 순회 기법 기본  
-  동빈나 실전 알고리즘 강좌([블로그](https://blog.naver.com/ndb796/221233560789), [유튜브](https://youtu.be/z_tzHoPfllA) ) 를 기본으로 구현  
-  구조체 및 이진트리 순회 기법 익혀야 함  
-- 풀이 코드 :
+   *  이진 트리 순회 기법 기본  
+   *  동빈나 실전 알고리즘 강좌([블로그](https://blog.naver.com/ndb796/221233560789), [유튜브](https://youtu.be/z_tzHoPfllA) ) 를 기본으로 구현  
+   *  구조체 및 이진트리 순회 기법 익혀야 함  
+* 풀이 코드 :
 ```cpp
 #include <iostream>
 #include <tuple>

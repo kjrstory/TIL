@@ -2,13 +2,13 @@
 
 [문제 출처](https://www.acmicpc.net/problem/2252)  
 
-- 풀이 방법 및 배워야할 것: 
+* 풀이 방법 및 배워야할 것: 
 
-  위상 정렬 기본 문제  
-  동빈나 알고리즘강좌([블로그](https://blog.naver.com/ndb796/221236874984), [유튜브](https://www.youtube.com/watch?v=qzfeVeajuyc))를 토대로 작성  
-  응용하기 위해 많은 연습 필요  
+   * 위상 정렬 기본 문제  
+   * 동빈나 알고리즘강좌([블로그](https://blog.naver.com/ndb796/221236874984), [유튜브](https://www.youtube.com/watch?v=qzfeVeajuyc))를 토대로 작성  
+   * 응용하기 위해 많은 연습 필요  
 
-- 풀이 코드 :
+* 풀이 코드 :
 ```cpp
 #include <iostream>
 #include <vector>

@@ -2,11 +2,11 @@
 
 [문제 출처](https://www.acmicpc.net/problem/2178) 
 
-- 풀이 방법 :  
-  BFS로 탐색하면서 최단거리를 계산하는 배열을 갱신해야 함 
+* 풀이 방법 :  
+  * BFS로 탐색하면서 최단거리를 계산하는 배열을 갱신해야 함 
     
 
-- 풀이 코드 : 
+* 풀이 코드 : 
 ```cpp
 #include <iostream>
 #include <queue>
