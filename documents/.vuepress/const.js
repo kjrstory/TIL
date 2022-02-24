@@ -22,4 +22,10 @@ exports.AlgorithmList = [
   "Algorithm/BaekJoon_2609.md",
   "Algorithm/BaekJoon_14889.md",
   "Algorithm/BaekJoon_11047.md",
+  "Algorithm/BaekJoon_1931.md",
+  "Algorithm/BaekJoon_11399.md",
 ];
+
+exports.FastCampusList = [
+  "FastCampus/Csharp_Unity.md",
+]

@@ -16,7 +16,11 @@ module.exports = {
       {
         title: 'Algorithm',
         children: CONST.AlgorithmList
-      }
+      },
+      {
+        title: 'Fast Campus',
+        children: CONST.FastCampusList
+      },
     ],
     nav: [{
         text: 'GitHub',
