@@ -24,6 +24,7 @@ exports.AlgorithmList = [
   "Algorithm/BaekJoon_11047.md",
   "Algorithm/BaekJoon_1931.md",
   "Algorithm/BaekJoon_11399.md",
+  "Algorithm/BaekJoon_1541.md",
 ];
 
 exports.FastCampusList = [
