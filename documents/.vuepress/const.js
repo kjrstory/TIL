@@ -28,6 +28,8 @@ exports.AlgorithmList = [
   "Algorithm/BaekJoon_10845.md",
   "Algorithm/BaekJoon_15829.md",
   "Algorithm/BaekJoon_13305.md",
+  "Algorithm/BaekJoon_1934.md",
+  "Algorithm/BaekJoon_3036.md",
 ];
 
 exports.FastCampusList = [
