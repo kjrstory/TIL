@@ -30,6 +30,10 @@ exports.AlgorithmList = [
   "Algorithm/BaekJoon_13305.md",
   "Algorithm/BaekJoon_1934.md",
   "Algorithm/BaekJoon_3036.md",
+  "Algorithm/BaekJoon_1010.md",
+  "Algorithm/BaekJoon_11050.md",
+  "Algorithm/BaekJoon_1676.md",
+  "Algorithm/BaekJoon_18111.md",
 ];
 
 exports.FastCampusList = [
