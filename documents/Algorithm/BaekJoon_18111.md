@@ -1,4 +1,4 @@
-# BaekJoon 18111 마인크르패트
+# BaekJoon 18111 마인크래프트
 
 
 [문제 출처](https://www.acmicpc.net/problem/18111)  
