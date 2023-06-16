@@ -1,4 +1,4 @@
-# BaekJoon 11050 아항계수
+# BaekJoon 11050 이항계수
 
 
 [문제 출처](https://www.acmicpc.net/problem/11050)  
