@@ -33,3 +33,19 @@ module.exports = {
     ]
   },
 }
+
+
+module.exports = {
+  configureWebpack: {
+    externals: {
+      d3: 'https://d3js.org/d3.v7.min.js', // d3.js를 외부 스크립트로 로드
+    },
+  },
+  chainWebpack: (config) => {
+    config
+      .entry('app')
+      .add('https://unpkg.com/cal-heatmap/dist/cal-heatmap.css') // cal-heatmap 스타일을 추가
+      .add('https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js'); // cal-heatmap 스크립트를 추가
+  },
+};
+
