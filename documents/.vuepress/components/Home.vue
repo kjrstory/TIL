@@ -17,13 +17,7 @@
       </div>
     </div>
   </div>
-  <div id="cal-heatmap"></div> 
 </template>
-
-<script type="text/javascript">
-   const cal = new CalHeatmap();
-   cal.paint({ range: 3 });
-</script>
 
 <style>
 @import "https://fonts.googleapis.com/css?family=Black+And+White+Picture";
