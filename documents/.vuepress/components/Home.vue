@@ -13,6 +13,9 @@
           <li>
             <a href="https://www.linkedin.com/in/kjrstory/">LinkedIn</a>
           </li>
+          <li>
+            <a href="/day-one-folder/">Test</a>
+          </li>
         </ul>
       </div>
     </div>
