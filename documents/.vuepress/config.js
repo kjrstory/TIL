@@ -18,6 +18,10 @@ module.exports = {
         children: CONST.AlgorithmList
       },
       {
+        title: 'Algorithm(Old)',
+        children: CONST.AlgorithmList
+      },
+      {
         title: 'Fast Campus',
         children: CONST.FastCampusList
       },
