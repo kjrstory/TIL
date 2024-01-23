@@ -1,4 +1,8 @@
 exports.AlgorithmList = [
+  "Algorithm/BaekJoon_2309.md",
+];
+
+exports.AlgorithmOldList = [
   "Algorithm/BaekJoon.md",
   "Algorithm/BaekJoon_202212.md",
   "Algorithm/BaekJoon_1004.md",
