@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         title: 'Algorithm(Old)',
-        children: CONST.AlgorithmList
+        children: CONST.AlgorithmOldList
       },
       {
         title: 'Fast Campus',
