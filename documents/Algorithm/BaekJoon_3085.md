@@ -5,7 +5,7 @@
 ### 풀이 방법 및 배워야할 것: 
 
    *  보드의 크기가 50이여서 이중 배열을 쓰더라도 50*50=2500으로 크지 않으므로 브루트 포스를 사용하면 되는 문제이다.
-리스트를 스왑하기 위해서 C++에서는 `algorithm` 라이브러리의 `swap`명령어를 사용하면 된다.
+리스트 원소를 스왑하기 위해서 C++에서는 `algorithm` 라이브러리의 `swap`명령어를 사용하면 된다.
 python에서는 라이브러리 없이 `board[i][j], board[i][j+1] = board[i][j+1], board[i][j]` 와 같은 방법을 사용하면 된다.
    *  난이도: Silver 2
    *  푼 날짜: 2024-01-24
@@ -14,7 +14,7 @@ python에서는 라이브러리 없이 `board[i][j], board[i][j+1] = board[i][j+
 
 #### C++
 
-```c++
+```cpp
 #include <iostream>
 #include <algorithm>
 
