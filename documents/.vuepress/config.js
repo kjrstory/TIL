@@ -11,6 +11,7 @@ module.exports = {
       href: '/logo.png'
     }]
   ],
+  plugins: [["sitemap", { hostname: "https://kjrstory.github.io/TIL/" }]],
   themeConfig: {
     sidebar: [
       {
