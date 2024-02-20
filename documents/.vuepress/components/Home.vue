@@ -14,7 +14,7 @@
             <a href="https://www.linkedin.com/in/kjrstory/">LinkedIn</a>
           </li>
           <li>
-            <a href="/TIL/dashbaod">Headmp</a>
+            <a href="/TIL/dashboard">Heatmap</a>
           </li>
         </ul>
       </div>
