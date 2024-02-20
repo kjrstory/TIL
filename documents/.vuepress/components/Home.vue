@@ -14,7 +14,7 @@
             <a href="https://www.linkedin.com/in/kjrstory/">LinkedIn</a>
           </li>
           <li>
-            <a href="/day-one-folder/">Test</a>
+            <a href="/TIL/dashbaod">Headmp</a>
           </li>
         </ul>
       </div>
