@@ -9,7 +9,8 @@ module.exports = {
     ['link', {
       rel: 'icon',
       href: '/logo.png'
-    }]
+    }],
+    ['meta', { name: 'google-site-verification', content: 'lvS87f9v0gVkvEVoDZfidOIiyW7LsT1MBLvQyf7SNHY' }],
   ],
   plugins: [["sitemap", { hostname: "https://kjrstory.github.io/TIL/" }]],
   themeConfig: {
