@@ -17,10 +17,16 @@
 <script type="text/javascript">
     const cal = new CalHeatmap
     cal.paint({ 
+        data: {
+            source: '/TIL/dashboard/til-data.csv', // CSV 파일 경로로 변경하세요
+            type: 'csv',
+            x: 'date',
+            y: d => +d['post_count']
+        },
         range: 1,
         domain: {
-          type: 'year',
-          label: { text: null },
+            type: 'year',
+            label: { text: null },
         },
         subDomain: { type: 'day', radius: 2 },
         scale: { color: { type: 'linear', scheme: 'PRGn', domain: [0, 4] } },
