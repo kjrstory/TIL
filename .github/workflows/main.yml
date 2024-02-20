@@ -11,6 +11,6 @@ jobs:
       uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.TOKEN }}
-        BUILD_SCRIPT: yarn && yarn build
+        BUILD_SCRIPT: yarn && yarn build && yarn add -D vuepress-plugin-sitemap 
         TARGET_BRANCH: gh-pages
         BUILD_DIR: build/
