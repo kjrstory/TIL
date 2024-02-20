@@ -15,25 +15,10 @@
     <div id="cal-heatmap"></div>
 </body>
 <script type="text/javascript">
-    const cal = new CalHeatmap();
-    cal.paint({
-        date: { start: new Date('2024-01-01'), end: new Date('2024-12-31') },
-        range: 12,
-        scale: { color: { type: 'linear', scheme: 'PRGn', domain: [0, 4] } },
-        domain: {
-            type: 'month',
-            gutter: 4,
-            label: { text: 'MMM', textAlign: 'start', position: 'top' }
-        },
-        subDomain: {
-            type: 'x_day',
-            radius: 2,
-            width: 11,
-            height: 11,
-            gutter: 4
-        },
-        itemSelector: '#cal-heatmap'
-    });
+    const cal = new CalHeatmap
+    cal.paint({ 
+        range: 3 
+    });    
 </script>
 
 </html>
