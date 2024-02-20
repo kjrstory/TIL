@@ -17,12 +17,14 @@
 <script type="text/javascript">
     const cal = new CalHeatmap
     cal.paint({ 
-        range: 12,
+        range: 1,
         domain: {
-            type: 'month',
-            gutter: 4,
-            label: { text: 'MMM', textAlign: 'start', position: 'top' }
-        }
+          type: 'year',
+          label: { text: null },
+        },
+        subDomain: { type: 'day', radius: 2 },
+        scale: { color: { type: 'linear', scheme: 'PRGn', domain: [0, 4] } },
+        date: { start: new Date('2024-01-01'), end: new Date('2024-12-31') },
     });    
 </script>
 
