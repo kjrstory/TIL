@@ -17,7 +17,12 @@
 <script type="text/javascript">
     const cal = new CalHeatmap
     cal.paint({ 
-        range: 3 
+        range: 12,
+        domain: {
+            type: 'month',
+            gutter: 4,
+            label: { text: 'MMM', textAlign: 'start', position: 'top' }
+        },
     });    
 </script>
 
