@@ -22,6 +22,8 @@
         </ul>
       </div>
     </div>
+    <h2>TIL Blog Activity in 2024</h2>
+    <div id="cal-heatmap"></div>
   </div>
 </template>
 
@@ -63,3 +65,29 @@ ul {
   }
 }
 </style>
+
+<script>
+export default {
+  name: 'Home',
+  mounted() {
+    const CalHeatmap = require('cal-heatmap');
+    const cal = new CalHeatmap();
+    cal.paint({ 
+      data: {
+        source: '/TIL/dashboard/til-data.csv', 
+        type: 'csv',
+        x: 'date',
+        y: d => +d['post_count']
+      },
+      range: 1,
+      domain: {
+        type: 'year',
+        label: { text: null },
+      },
+      subDomain: { type: 'day', radius: 2 },
+      scale: { color: { type: 'linear', scheme: 'ylgn', domain: [0, 4] } },
+      date: { start: new Date('2024-01-01'), end: new Date('2024-12-31') },
+    });
+  }
+}
+</script>
