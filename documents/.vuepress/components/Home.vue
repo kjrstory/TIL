@@ -14,6 +14,9 @@
             <a href="https://www.linkedin.com/in/kjrstory/">LinkedIn</a>
           </li>
           <li>
+            <a href="https://kjrstory.netlify.app/">Tech. Blog</a>
+          </li>
+          <li>
             <a href="/TIL/dashboard">Heatmap</a>
           </li>
         </ul>
