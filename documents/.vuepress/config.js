@@ -8,6 +8,9 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'google-site-verification', content: 'lvS87f9v0gVkvEVoDZfidOIiyW7LsT1MBLvQyf7SNHY' }],
+    ['script', { src: 'https://d3js.org/d3.v7.min.js' }],
+    ['script', { src: 'https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js' }],
+    ['link', { rel: 'stylesheet', href: 'https://unpkg.com/cal-heatmap/dist/cal-heatmap.css' }],
   ],
   plugins: [["sitemap", { hostname: "https://kjrstory.github.io/TIL/" }]],
   themeConfig: {
