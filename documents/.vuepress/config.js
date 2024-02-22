@@ -6,10 +6,6 @@ module.exports = {
   base: "/TIL/",
   dest: 'build',
   head: [
-    ['link', {
-      rel: 'icon',
-      href: '/logo.png'
-    }],
     ['meta', { name: 'google-site-verification', content: 'lvS87f9v0gVkvEVoDZfidOIiyW7LsT1MBLvQyf7SNHY' }],
   ],
   plugins: [["sitemap", { hostname: "https://kjrstory.github.io/TIL/" }]],
@@ -32,12 +28,14 @@ module.exports = {
         text: 'GitHub',
         link: 'https://github.com/kjrstory/'
       },
-         {
+      {
         text: 'LinkedIn',
         link: 'https://www.linkedin.com/in/kjrstory/'
+      },
+      {
+        text: 'Tech. Blog',
+        link: 'https://kjrstory.netlify.app/'
       }
     ]
   },
 }
-
-
