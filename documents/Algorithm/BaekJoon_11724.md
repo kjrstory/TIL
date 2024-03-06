@@ -1,116 +1,85 @@
-## BaekJoon 9095 1, 2, 3 더하기
+## BaekJoon 11724 연결 요소의 개수
 
-[문제 출처](https://www.acmicpc.net/problem/9095)  
+[문제 출처](https://www.acmicpc.net/problem/11724)  
 
 ### 풀이 방법 및 배워야할 것: 
 
-   *  동적계획법으로 풀거나 DFS를 이용한 브루트포스로도 풀 수 있는 문제
-   *  난이도: Silver 3
-   *  푼 날짜 2024-01-25
+   *  BFS나 DFS로 가능한 문제
+   *  파이썬에서는 재귀 깊이 설정 `sys.setrecursionlimit(10**6)`을 해야 함. 백준 사이트의 도움말 중 [런타임에러(재귀에러)](https://help.acmicpc.net/judge/rte/RecursionError)를 참고
+   *  파이썬에 입력의 오버헤드를 줄이기 위해 `input = sys.stdin.readline`가 필요
+   *  난이도: Silver 2
+   *  푼 날짜 2024-03-06
 
 ### 풀이 코드 :
 
 #### C++
-* 동적계획법(Dynamic Programming)
 ```cpp
 #include <iostream>
-
+#include <vector>
 using namespace std;
 
-int dp[11];
+vector<int> graph[1001];
+bool visited[1001];
 
+void dfs(int index){
+	visited[index] = true;
+	for(auto& neighbor : graph[index]){
+		if (visited[neighbor]) continue;
+		dfs(neighbor);
+	}
+}
+		
 int main(){
-	int T, n;
+	int N, M;
+	cin >> N >> M ;
+	int u, v;
+	
+	for (int i=0; i<M;i++){
+		cin >> u >> v;
+		graph[u].push_back(v);	
+		graph[v].push_back(u);
+	}
 
-	dp[1]=1;
-	dp[2]=2;
-	dp[3]=4;
-	for (int i=4; i<=10;i++){
-		dp[i] = dp[i-1] + dp[i-2] + dp[i-3];  
+	int answer = 0 ;
+	for (int i=1; i<=N;i++){
+		if (visited[i]) continue;
+		dfs(i);
+		answer++;
 	}
-	cin >> T;
-	while (T--){
-		cin >> n;
-		cout << dp[n] << "\n";
-	}
+	
+	cout << answer;
 	return 0;
 }
 
 ```
-* 브루트포스(Brute Force)
-```cpp
-#include <iostream>
 
-using namespace std;
-
-int answer;
-
-void dfs(int sum, int n) {
-
-	if (sum == n) {
-        answer++;
-        return;
-    }
-
-	if (sum > n) {
-        return;
-    }
-
-	dfs(sum + 1, n);
-    dfs(sum + 2, n);
-    dfs(sum + 3, n);
-}
-
-int main(){
-	int T, n;
-
-	cin >> T;
-	while (T--){
-		cin >> n;
-		answer = 0;
-        dfs(0, n);
-        cout << answer << "\n";
-	}
-	return 0;
-}
-
-```
-#### Python
-* 동적계획법(Dynamic Programming)
 ```python
-dp = [0] * 11
-dp[1], dp[2], dp[3] = 1, 2, 4
-for i in range(4, 11):
-    dp[i] = dp[i-1] + dp[i-2] + dp[i-3]
-T = int(input())
-for _ in range(T):
-    n = int(input())
-    print(dp[n])
+import sys
+input = sys.stdin.readline
+sys.setrecursionlimit(10**6)
+
+N, M = map(int, input().split())
+graph = [[] for _ in range(N+1)]
+visited = [False] * (N+1)
+
+for _ in range(M):
+    u, v = map(int, input().split())
+    graph[u].append(v)
+    graph[v].append(u)
+
+
+def dfs(index):
+    visited[index] = True
+    for i in graph[index]:
+        if not visited[i]:
+            dfs(i)
+
+
+answer = 0
+for i in range(1, N + 1):
+    if not visited[i]:
+        dfs(i)
+        answer += 1
+
+print(answer)
 ```
-* 브루트포스(Brute Force)
-```python
-def dfs(sum, n):
-    global count
-    if sum == n:
-        count += 1
-        return
-    if sum > n:
-        return
-
-    dfs(sum + 1, n)
-    dfs(sum + 2, n)
-    dfs(sum + 3, n)
-
-
-T = int(input())
-
-for _ in range(T):
-    n = int(input())
-    count = 0
-    dfs(0, n)
-    print(count)
-
-```
-0 comments on commit 1b128b7
-@kjrstory
-Comment
