@@ -68,5 +68,5 @@ exports.AlgorithmOldList = [
 
 exports.FastCampusList = [
   "FastCampus/Csharp_Unity.md",
-  "20240306_CS_Basic.md",
+  "FastCampus/20240306_CS_Basic.md",
 ]
