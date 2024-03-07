@@ -1,6 +1,7 @@
 exports.AlgorithmList = [
   "Algorithm/BaekJoon_2309.md",
   "Algorithm/BaekJoon_3085.md",
+  "Algorithm/BaekJoon_6588.md",
   "Algorithm/BaekJoon_9095.md",
   "Algorithm/BaekJoon_10819.md",
   "Algorithm/BaekJoon_10971.md",
