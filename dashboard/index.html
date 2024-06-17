@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TIL Blog Activity Heatmap</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+   <script src="https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js"></script>
+   <link rel="stylesheet" href="https://unpkg.com/cal-heatmap/dist/cal-heatmap.css">
+</head>
+
+<body>
+    <h1>TIL Blog Activity in 2024</h1>
+    <div id="cal-heatmap"></div>
+</body>
+<script type="text/javascript">
+    const cal = new CalHeatmap
+    cal.paint({ 
+        data: {
+            source: '/TIL/dashboard/til-data.csv', // CSV 파일 경로로 변경하세요
+            type: 'csv',
+            x: 'date',
+            y: d => +d['post_count']
+        },
+        range: 1,
+        domain: {
+            type: 'year',
+            label: { text: null },
+        },
+        subDomain: { type: 'day', radius: 2 },
+        scale: { color: { type: 'linear', scheme: 'ylgn', domain: [0, 4] } },
+        date: { start: new Date('2024-01-01'), end: new Date('2024-12-31') },
+    });    
+</script>
+
+</html>
+    
