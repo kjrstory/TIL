@@ -13,6 +13,7 @@ exports.AlgorithmList = [
   "Algorithm/BaekJoon_15654.md",
   "Algorithm/BaekJoon_18290.md",
   "Algorithm/BaekJoon_18406.md",
+  "Algorithm/Programmer_12941.md",
   
 ];
 
