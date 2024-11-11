@@ -1,22 +1,25 @@
-## BaekJoon 18258번 문제 - 큐 2
+# BaekJoon 18258번 문제 - 큐 2
 
 * 문제: [백준 18258](https://www.acmicpc.net/problem/18258)   
 * 난이도: Silver 4
 * 날짜: 2024-11-11
 
-### 문제 요약
+## 문제 요약
 
 큐 구현
+
 명령어 종류: push X, pop, size, empty, front, back
+
 큐가 비어 있는 상태에서 pop, front, back 명령어가 들어오면 -1을 출력
 
-### 풀이 방법 및 배워야할 것: 
+## 풀이 방법 및 배워야할 것: 
 
    * C++: queue 기본 사용법, 입출력 최적화(cin.tie(0)과 ios_base::sync_with_stdio(0)) 
    * Python: deque 기본 사용법, 입출력 최적화(sys.stdin, sys.stdout)
  
-### 풀이 코드 :
+## 풀이 코드 :
 
+* C++
 ```cpp
 #include <queue>
 #include <iostream>
@@ -78,6 +81,7 @@ int main(){
     return 0;
 }
 ```
+* Python
 
 ```python
 from collections import deque
