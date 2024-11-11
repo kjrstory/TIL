@@ -16,6 +16,10 @@ module.exports = {
   themeConfig: {
     sidebar: [
       {
+        title: 'Algorithm(New)',
+        children: CONST.AlgorithmNewList
+      },
+      {
         title: 'Algorithm',
         children: CONST.AlgorithmList
       },
