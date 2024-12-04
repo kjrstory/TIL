@@ -1,4 +1,5 @@
 exports.AlgorithmNewList = [
+  "Algorithm/BaekJoon_14267.md",
   "Algorithm/BaekJoon_1068.md",
   "Algorithm/BaekJoon_14465.md",
   "Algorithm/BaekJoon_2599.md",
